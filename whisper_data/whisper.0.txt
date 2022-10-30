@@ -1,7 +1,49 @@
-[00:00:00.000 --> 00:00:18.680]    Hello, everyone. Welcome to the March Kubernetes Community Meeting. Thank you all for joining
-[00:00:18.680 --> 00:00:24.400]    or for watching, if you're watching this on recording, which hopefully more of you are.
-[00:00:24.400 --> 00:00:35.880]    I am Josh Berkus. I am hosting today's meeting. And Taliesin is our note taker. Laura is our
-[00:00:35.880 --> 00:00:45.040]    usher here. You too can be a volunteer for the glamorous community meeting that we have
-[00:00:45.040 --> 00:00:49.960]    every month. It's actually kind of fun. Plus, you get to know a lot of people in the community
-[00:00:49.960 --> 00:00:56.960]    who you maybe didn't know before. If you're interested in this, please contact us on ENC
-[00:00:56.960 --> 00:01:20.520]    and we'll have a great experience.
+Thank you all for joining or for watching if you're watching this on the recording, which hopefully more of you are.
+I am Josh Berkus.
+I am hosting today's meeting.
+Taliesin is our note taker.
+Laura is our usher here.
+You too can be a volunteer for the glamorous community meeting that we have every month.
+It's actually kind of fun.
+Plus, you get to know a lot of people in the community who you maybe didn't know before.
+If you're interested in this, please contact us on ENC contributor experience either through the mailing list or through the Slack.
+We will be happy to set you up helping out with one of the future community meetings.
+The usual housekeeping.
+First of all, this is an official meeting of the Kubernetes project.
+As such, we are subject to the Kubernetes code of conduct.
+So please be respectful towards each other.
+Or housekeeping.
+You want to tell them about the read only version? Oh, right.
+Yes.
+So we posted a link there in the chat for a read only version of the notes.
+If you are not taking notes or adding things to one of the agenda items, please close your tab of the editable version and open your tab of the read only version simply because Google Docs tends to slow down when too many people have a document.
+And Allison needs to take notes.
+So that's there.
+We have a number of topics for this meeting.
+All those topics were gathered from the community over the last several weeks as things that we felt were of general community interest.
+However, for any and all of you as contributors to Kubernetes, you are entitled and in fact encouraged to put things on the agenda for the community meeting when there are things that the community should probably pay attention to.
+And again, please either just drop something on the agenda document, which is open year round, or contact SIG contributed experience or use our forum.
+Or if you could drop a link to that forum in there.
+To say that you have an item and give us information about what it is.
+Because that's what this meeting is for.
+So with that, we're going to go ahead and get started with the meeting.
+We've got some announcements.
+One of them I'm going to be real quick on.
+So the release cadence survey is open.
+That link is in the notes and will soon be posted to chat.
+And we will be talking more about that later in this meeting.
+There is, by the way, a second survey.
+This is not a Kubernetes community survey.
+This is a survey being done by a student at Florida University.
+Spirthy, if you want to turn your camera on and wave at everybody.
+Hey there.
+So Spirthy, who is a student at Florida University doing her graduate study in CS, wants to find out how we interact with bots such as the prow bot and has put together a survey with the help of some of the people in the community.
+So take a look at that link in the notes and fill it out if you have time.
+Thank you.
+And then finally, we are planning to have a contributor summit at KubeCon Europe.
+So Pouya, are you here? Yeah, yes, I am.
+I'll make it short.
+There will be a KubeCon contributor summit in Europe, in Valencia.
+It's going to be on the Monday the 16th.
+So three COLO events.
+

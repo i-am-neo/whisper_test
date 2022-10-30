@@ -1,28 +1,37 @@
-[00:00:00.000 --> 00:00:05.000]    We're currently aiming at kicking off the organization on Monday.
-[00:00:05.000 --> 00:00:11.000]    There's roughly a plan to make it unconference style, single track plus hallway track.
-[00:00:11.000 --> 00:00:17.000]    And volunteers are still welcome. If you want to volunteer, just join the organ meeting on Monday.
-[00:00:17.000 --> 00:00:23.000]    The link is in the notes document that I'm going to post in the chat in a bit.
-[00:00:23.000 --> 00:00:44.000]    And or just join the summit staff channel, but only join the summit staff channel if you want to volunteer, you just want to join the contributor summit there's also contributor summit channel, where you're going to post registration information and other kinds of things.
-[00:00:44.000 --> 00:00:46.000]    Okay.
-[00:00:46.000 --> 00:01:03.000]    Thank you.
-[00:01:03.000 --> 00:01:24.000]    So, go ahead. I am young. Hi everyone. This is to see from the red list.
-[00:01:24.000 --> 00:01:43.000]    I'm going to be starting in late 15th, and I will just give some major milestones for everyone to be aware of. First we are going to start to take exceptions starting March 1, and we are going to have like one more meeting at a study next week.
-[00:01:43.000 --> 00:01:52.000]    Also, 21st of March, and we will be have daily meetings starting on the 8th of April. Sorry, March.
-[00:01:52.000 --> 00:01:58.000]    And we will have our first release retrospective meeting scheduled also next week.
-[00:01:58.000 --> 00:02:22.000]    Currently we have 16 six enhancement tracked, and we are like, roughly two weeks to code phrase, which is Wednesday, 20th or 30th of March. So, for all the tracking has meant, let's be aware you have to get all the PR merged before the code phrase to be able to consider that is completed.
-[00:02:22.000 --> 00:02:43.000]    And for all the, which needs stocks, please be aware you have to open up this folder PRS before before 31st of March, and the top deadline for care ready to review is this April, and our docs team will make sure that all the docs in virtual one week before the
-[00:02:43.000 --> 00:02:56.000]    release.
-[00:02:56.000 --> 00:03:21.000]    Next, and we are reached up to release channel so please reach out to Barry, you have any questions or concerns.
-[00:03:21.000 --> 00:03:30.000]    And for the patch release backward to the meeting for the offer for release card, and all the previous with this card which mostly.
-[00:03:30.000 --> 00:03:35.000]    Yeah, that's basically up this from us. Thank you.
-[00:03:35.000 --> 00:03:38.000]    Thank you.
-[00:03:38.000 --> 00:03:43.000]    Laura Lawrence, do you want any comments about the current state of signal.
-[00:03:43.000 --> 00:03:50.000]    Yeah, hi everybody's signal shadow for this release here and then Laura.
-[00:03:50.000 --> 00:04:03.000]    So basically, exactly as he said, the important deadline is for the next release cut which is next Tuesday, so we're keeping an eye on that.
-[00:04:03.000 --> 00:04:21.000]    These are a bit of long standing open failure and flakes so they have a bit of a history to but will be coming around and making sure that that's resolved before Tuesday.
-[00:04:21.000 --> 00:04:35.000]    Okay, well thank you. And I actually forgot to solicit anybody from the patch from the patch team release engineering, do we have anybody online here.
-[00:04:35.000 --> 00:04:36.000]    Okay.
-[00:04:36.000 --> 00:04:44.000]    I'm going to say anything other than should have gotten patch releases yesterday.
-[00:04:44.000 --> 00:04:49.000]    The devil is for that.
-[00:04:49.000 --> 00:04:59.000]    Okay, well thank you. And that said, let's go into our first kept item here.
-[00:04:59.000 --> 00:05:20.000]    Which is
+We're currently aiming at kicking off the organization on Monday.
+There's roughly a plan to make it unconference style, single track plus hallway track.
+And volunteers are still welcome.
+If you want to volunteer, just join the organ meeting on Monday.
+The link is in the notes document that I'm going to post in the chat in a bit.
+And or just join the summit staff channel, but only join the summit staff channel if you want to volunteer, you just want to join the contributor summit there's also contributor summit channel, where you're going to post registration information and other kinds of things.
+Okay.
+Thank you.
+So, go ahead.
+I am young.
+Hi everyone.
+This is to see from the red list.
+I'm going to be starting in late 15th, and I will just give some major milestones for everyone to be aware of.
+First we are going to start to take exceptions starting March 1, and we are going to have like one more meeting at a study next week.
+Also, 21st of March, and we will be have daily meetings starting on the 8th of April.
+Sorry, March.
+And we will have our first release retrospective meeting scheduled also next week.
+Currently we have 16 six enhancement tracked, and we are like, roughly two weeks to code phrase, which is Wednesday, 20th or 30th of March.
+So, for all the tracking has meant, let's be aware you have to get all the PR merged before the code phrase to be able to consider that is completed.
+And for all the, which needs stocks, please be aware you have to open up this folder PRS before before 31st of March, and the top deadline for care ready to review is this April, and our docs team will make sure that all the docs in virtual one week before the release.
+Next, and we are reached up to release channel so please reach out to Barry, you have any questions or concerns.
+And for the patch release backward to the meeting for the offer for release card, and all the previous with this card which mostly.
+Yeah, that's basically up this from us.
+Thank you.
+Thank you.
+Laura Lawrence, do you want any comments about the current state of signal.
+Yeah, hi everybody's signal shadow for this release here and then Laura.
+So basically, exactly as he said, the important deadline is for the next release cut which is next Tuesday, so we're keeping an eye on that.
+These are a bit of long standing open failure and flakes so they have a bit of a history to but will be coming around and making sure that that's resolved before Tuesday.
+Okay, well thank you.
+And I actually forgot to solicit anybody from the patch from the patch team release engineering, do we have anybody online here.
+Okay.
+I'm going to say anything other than should have gotten patch releases yesterday.
+The devil is for that.
+Okay, well thank you.
+And that said, let's go into our first kept item here.
+Which is.
