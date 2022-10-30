@@ -1,0 +1,267 @@
+[00:00:00.000 --> 00:00:18.000]    Thank you all for joining or for watching if you're watching this on the recording,
+[00:00:18.000 --> 00:00:21.320]    which hopefully more of you are.
+[00:00:21.320 --> 00:00:23.520]    I am Josh Berkus.
+[00:00:23.520 --> 00:00:30.080]    I am hosting today's meeting.
+[00:00:30.080 --> 00:00:31.080]    Taliesin is our note taker.
+[00:00:31.080 --> 00:00:32.080]    Laura is our usher here.
+[00:00:32.080 --> 00:00:33.080]    You too can be a volunteer for the glamorous community meeting that we have every month.
+[00:00:33.080 --> 00:00:34.080]    It's actually kind of fun.
+[00:00:34.080 --> 00:00:50.200]    Plus, you get to know a lot of people in the community who you maybe didn't know before.
+[00:00:50.200 --> 00:00:56.080]    If you're interested in this, please contact us on ENC contributor experience either through
+[00:00:56.080 --> 00:00:58.080]    the mailing list or through the Slack.
+[00:00:58.080 --> 00:01:07.920]    We will be happy to set you up helping out with one of the future community meetings.
+[00:01:07.920 --> 00:01:08.920]    The usual housekeeping.
+[00:01:08.920 --> 00:01:13.760]    First of all, this is an official meeting of the Kubernetes project.
+[00:01:13.760 --> 00:01:18.160]    As such, we are subject to the Kubernetes code of conduct.
+[00:01:18.160 --> 00:01:26.360]    So please be respectful towards each other.
+[00:01:26.360 --> 00:01:27.360]    Or housekeeping.
+[00:01:27.360 --> 00:01:40.360]    You want to tell them about the read only version?
+[00:01:40.360 --> 00:01:41.360]    Oh, right.
+[00:01:41.360 --> 00:01:42.360]    Yes.
+[00:01:42.360 --> 00:01:49.120]    So we posted a link there in the chat for a read only version of the notes.
+[00:01:49.120 --> 00:01:55.880]    If you are not taking notes or adding things to one of the agenda items, please close your
+[00:01:55.880 --> 00:02:03.920]    tab of the editable version and open your tab of the read only version simply because
+[00:02:03.920 --> 00:02:08.600]    Google Docs tends to slow down when too many people have a document.
+[00:02:08.600 --> 00:02:12.760]    And Allison needs to take notes.
+[00:02:12.760 --> 00:02:13.760]    So that's there.
+[00:02:13.760 --> 00:02:18.760]    We have a number of topics for this meeting.
+[00:02:18.760 --> 00:02:25.600]    All those topics were gathered from the community over the last several weeks as things that
+[00:02:25.600 --> 00:02:28.840]    we felt were of general community interest.
+[00:02:28.840 --> 00:02:36.040]    However, for any and all of you as contributors to Kubernetes, you are entitled and in fact
+[00:02:36.040 --> 00:02:42.600]    encouraged to put things on the agenda for the community meeting when there are things
+[00:02:42.600 --> 00:02:46.280]    that the community should probably pay attention to.
+[00:02:46.280 --> 00:02:51.840]    And again, please either just drop something on the agenda document, which is open year
+[00:02:51.840 --> 00:02:56.680]    round, or contact SIG contributed experience or use our forum.
+[00:02:56.680 --> 00:03:02.080]    Or if you could drop a link to that forum in there.
+[00:03:02.080 --> 00:03:08.280]    To say that you have an item and give us information about what it is.
+[00:03:08.280 --> 00:03:12.560]    Because that's what this meeting is for.
+[00:03:12.560 --> 00:03:19.320]    So with that, we're going to go ahead and get started with the meeting.
+[00:03:19.320 --> 00:03:20.320]    We've got some announcements.
+[00:03:20.320 --> 00:03:23.840]    One of them I'm going to be real quick on.
+[00:03:23.840 --> 00:03:27.880]    So the release cadence survey is open.
+[00:03:27.880 --> 00:03:46.880]    That link is in the notes and will soon be posted to chat.
+[00:03:46.880 --> 00:03:52.800]    And we will be talking more about that later in this meeting.
+[00:03:52.800 --> 00:03:54.280]    There is, by the way, a second survey.
+[00:03:54.280 --> 00:03:56.320]    This is not a Kubernetes community survey.
+[00:03:56.320 --> 00:03:59.840]    This is a survey being done by a student at Florida University.
+[00:03:59.840 --> 00:04:06.240]    Spirthy, if you want to turn your camera on and wave at everybody.
+[00:04:06.240 --> 00:04:09.240]    Hey there.
+[00:04:09.240 --> 00:04:18.680]    So Spirthy, who is a student at Florida University doing her graduate study in CS, wants to find
+[00:04:18.680 --> 00:04:23.640]    out how we interact with bots such as the prow bot and has put together a survey with
+[00:04:23.640 --> 00:04:27.040]    the help of some of the people in the community.
+[00:04:27.040 --> 00:04:32.760]    So take a look at that link in the notes and fill it out if you have time.
+[00:04:32.760 --> 00:04:33.760]    Thank you.
+[00:04:33.760 --> 00:04:41.440]    And then finally, we are planning to have a contributor summit at KubeCon Europe.
+[00:04:41.440 --> 00:04:44.600]    So Pouya, are you here?
+[00:04:44.600 --> 00:04:46.600]    Yeah, yes, I am.
+[00:04:46.600 --> 00:04:49.000]    I'll make it short.
+[00:04:49.000 --> 00:04:52.640]    There will be a KubeCon contributor summit in Europe, in Valencia.
+[00:04:52.640 --> 00:04:56.000]    It's going to be on the Monday the 16th.
+[00:04:56.000 --> 00:04:59.160]    So three of the COLO events.
+[00:04:59.160 --> 00:05:04.520]    We are currently aiming at kicking off the organization on Monday.
+[00:05:04.520 --> 00:05:11.400]    There is roughly a plan to make it unconference style, single track plus hallway track.
+[00:05:11.400 --> 00:05:13.480]    And volunteers are still welcome.
+[00:05:13.480 --> 00:05:16.640]    If you want to volunteer, just join the meeting on Monday.
+[00:05:16.640 --> 00:05:24.200]    The thing is in the notes document that I'm going to post in the chat in a bit and or
+[00:05:24.200 --> 00:05:28.880]    just join the summit staff channel, but only join the summit staff channel.
+[00:05:28.880 --> 00:05:31.960]    If you want to volunteer, you just want to join the contributor summit.
+[00:05:31.960 --> 00:05:37.640]    There's also a contributor summit channel where you're going to post registration information
+[00:05:37.640 --> 00:05:43.760]    and other kind of things.
+[00:05:43.760 --> 00:05:44.760]    Okay.
+[00:05:44.760 --> 00:05:45.760]    Thank you.
+[00:05:45.760 --> 00:05:50.760]    And with announcements, it's time to move into release updates.
+[00:05:50.760 --> 00:06:00.160]    And to give us release updates, we should have one of our release leads.
+[00:06:00.160 --> 00:06:02.160]    Yeah, Sissy here.
+[00:06:02.160 --> 00:06:03.160]    Yep.
+[00:06:03.160 --> 00:06:04.160]    Hey, Sissy, go ahead.
+[00:06:04.160 --> 00:06:05.160]    Hi.
+[00:06:05.160 --> 00:06:06.160]    Yeah.
+[00:06:06.160 --> 00:06:07.160]    Hi, everyone.
+[00:06:07.160 --> 00:06:08.160]    This is Sissy from the release team.
+[00:06:08.160 --> 00:06:14.800]    I'm going to be the release lead shadow for this cycle and I'm going to give updates for
+[00:06:14.800 --> 00:06:15.800]    the release team.
+[00:06:15.800 --> 00:06:23.160]    And currently we are at week 10 and the release is currently scheduled for April, which is
+[00:06:23.160 --> 00:06:24.160]    in wait 15th.
+[00:06:24.160 --> 00:06:31.280]    And I will just give some major milestones for everyone to be aware of.
+[00:06:31.280 --> 00:06:35.840]    First, we are going to start to take exceptions starting March 21st.
+[00:06:35.840 --> 00:06:43.920]    And we are going to have like one more meeting added starting next week, also 21st of March.
+[00:06:43.920 --> 00:06:50.720]    And we will have daily breakout meetings starting March 28th.
+[00:06:50.720 --> 00:06:57.360]    And also we will have our first release retrospective meeting scheduled also next week.
+[00:06:57.360 --> 00:07:05.520]    And currently we have 16.6 enhancement tracked and we are like roughly two weeks to code
+[00:07:05.520 --> 00:07:11.100]    freeze, which is Wednesday 30th of March.
+[00:07:11.100 --> 00:07:16.440]    So for all the tracking enhancement, please be aware you have to get all the PR merged
+[00:07:16.440 --> 00:07:21.560]    before the code freeze to be able to consider that it's completed.
+[00:07:21.560 --> 00:07:27.280]    And for all the enhancement which needs docs, please be aware you have to open the placeholder
+[00:07:27.280 --> 00:07:33.000]    PRs before 31st of March.
+[00:07:33.000 --> 00:07:37.040]    And the doc deadline for PR ready to review is 5th of April.
+[00:07:37.040 --> 00:07:42.760]    And our docs team will make sure that all the docs emerge one week before the monthly
+[00:07:42.760 --> 00:07:43.760]    release.
+[00:07:43.760 --> 00:07:49.040]    And we are starting to collect the major SIEMs candidate.
+[00:07:49.040 --> 00:07:54.440]    And if you have any suggestions, please don't hesitate to reach out, also any potential
+[00:07:54.440 --> 00:07:57.320]    release block context.
+[00:07:57.320 --> 00:08:01.080]    And we are reached in the SIG release channel.
+[00:08:01.080 --> 00:08:06.280]    So please reach out there if you have any questions or concerns.
+[00:08:06.280 --> 00:08:11.840]    For the CI signal update, we currently still have one filling test.
+[00:08:11.840 --> 00:08:19.040]    We will be syncing with the CI signal guys to make sure it gets addressed before the
+[00:08:19.040 --> 00:08:20.040]    release.
+[00:08:20.040 --> 00:08:26.840]    And for the patch release, backward relating for the alpha 4 release card and all the previous
+[00:08:26.840 --> 00:08:32.200]    release card, which is mostly, yeah, that's basically updates from us.
+[00:08:32.200 --> 00:08:33.200]    Thank you.
+[00:08:33.200 --> 00:08:34.200]    Thank you.
+[00:08:34.200 --> 00:08:40.640]    Laura Lawrence, do you want any comments about the current state of CI signal?
+[00:08:40.640 --> 00:08:42.440]    Yeah, hi, everybody.
+[00:08:42.440 --> 00:08:48.040]    CI signal for this release here named Laura.
+[00:08:48.040 --> 00:08:57.040]    Yeah, basically, exactly as Cece said, the important deadline is for the next release
+[00:08:57.040 --> 00:08:58.520]    cut, which is next Tuesday.
+[00:08:58.520 --> 00:09:02.080]    So we're keeping an eye on that.
+[00:09:02.080 --> 00:09:07.800]    Both of these are a bit of a long standing open failure and flakes.
+[00:09:07.800 --> 00:09:13.400]    So they have a bit of a history too, but we'll be coming around and making sure that that's
+[00:09:13.400 --> 00:09:16.160]    resolved before Tuesday.
+[00:09:16.160 --> 00:09:19.160]    And yeah, that's it.
+[00:09:19.160 --> 00:09:21.120]    Okay, well, thank you.
+[00:09:21.120 --> 00:09:27.120]    And I actually forgot to solicit anybody from the patch team on release engineering.
+[00:09:27.120 --> 00:09:30.120]    Do we have anybody online here?
+[00:09:30.120 --> 00:09:43.640]    Okay, I won't say anything other than should have gotten the patch releases yesterday.
+[00:09:43.640 --> 00:09:46.640]    The dev list for that.
+[00:09:46.640 --> 00:09:50.640]    Okay, well, thank you.
+[00:09:50.640 --> 00:10:00.720]    And that said, let's go into our first kept item here, which is the release cadence.
+[00:10:00.720 --> 00:10:03.280]    It's kept from a year ago.
+[00:10:03.280 --> 00:10:08.120]    And we've kind of really reached the next stage of that.
+[00:10:08.120 --> 00:10:12.920]    So Jeremy, if you would like to go ahead and take that away.
+[00:10:12.920 --> 00:10:13.920]    Sure.
+[00:10:13.920 --> 00:10:14.920]    Nice to see everybody.
+[00:10:14.920 --> 00:10:20.800]    I haven't been on a community meeting in a little bit, and it's fun to see all your faces.
+[00:10:20.800 --> 00:10:28.320]    So for those that are not aware, in 2020 with the 119 release, we ended up because of events
+[00:10:28.320 --> 00:10:34.440]    in the world, just the general state of things, the schedule for the 119 release got pretty
+[00:10:34.440 --> 00:10:35.840]    pretty elongated.
+[00:10:35.840 --> 00:10:43.080]    And the kind of takeaway or the fallout that is that we ended up with only three releases
+[00:10:43.080 --> 00:10:45.080]    for that year.
+[00:10:45.080 --> 00:10:52.720]    And that kind of served as a talking point or a way to place a kickoff discussion about
+[00:10:52.720 --> 00:10:55.640]    what was the proper release cadence for Kubernetes.
+[00:10:55.640 --> 00:11:00.360]    There's a lot of factors that go into like, you know, determining what the optimal thing
+[00:11:00.360 --> 00:11:01.360]    is.
+[00:11:01.360 --> 00:11:05.960]    But if you take a look at the support windows and the number of releases that happen per
+[00:11:05.960 --> 00:11:12.240]    year and how hard it is for some people to upgrade, we started the discussion about maybe
+[00:11:12.240 --> 00:11:16.120]    we should move to a permanent three release cadence or try it for a while and see what
+[00:11:16.120 --> 00:11:17.120]    it looks like.
+[00:11:17.120 --> 00:11:21.000]    Sort of a natural experiment.
+[00:11:21.000 --> 00:11:23.880]    And as part of that, we created a KEP.
+[00:11:23.880 --> 00:11:26.600]    And the KEP is linked here, you're welcome to go read it.
+[00:11:26.600 --> 00:11:32.760]    But at a really high level, what the KEP proposed was fixing the number of releases per year
+[00:11:32.760 --> 00:11:33.960]    to three.
+[00:11:33.960 --> 00:11:41.680]    And from that kind of backing into a loose framework for generating schedules.
+[00:11:41.680 --> 00:11:45.000]    So on average, releases are 15 weeks.
+[00:11:45.000 --> 00:11:50.400]    On average, it will be around two weeks between them to allow people to do some norming and
+[00:11:50.400 --> 00:11:55.280]    forming for the next release teams and things that go into that.
+[00:11:55.280 --> 00:11:59.520]    One of the things that we decided to do as part of the KEP was to send a survey after
+[00:11:59.520 --> 00:12:02.680]    we had done this for a little while to collect feedback from folks.
+[00:12:02.680 --> 00:12:05.720]    And today we're going to talk a little bit about some of that feedback.
+[00:12:05.720 --> 00:12:11.280]    Thanks to Josh for taking some of the data that came out of the surveys and making some
+[00:12:11.280 --> 00:12:12.280]    pretty graphs for us.
+[00:12:12.280 --> 00:12:13.280]    But the survey is still open.
+[00:12:13.280 --> 00:12:16.280]    And again, I think we linked it in the chat earlier.
+[00:12:16.280 --> 00:12:20.200]    But it's also linked in this document in the section as well.
+[00:12:20.200 --> 00:12:22.480]    If you have not filled it out yet, please do so.
+[00:12:22.480 --> 00:12:27.240]    Your feedback is very, very valuable and will help us determine whether this is the pattern
+[00:12:27.240 --> 00:12:32.560]    we continue or whether we need to make any further tweaks to the release cadence or the
+[00:12:32.560 --> 00:12:33.560]    schedules themselves.
+[00:12:33.560 --> 00:12:41.600]    I think a really interesting thing that came out of this was that the answers kind of break
+[00:12:41.600 --> 00:12:46.200]    down in a pretty clear pattern.
+[00:12:46.200 --> 00:12:51.360]    People strongly prefer the three release cadence so far.
+[00:12:51.360 --> 00:12:55.840]    There's a smaller number of people that prefer but not strongly prefer the three release
+[00:12:55.840 --> 00:12:56.840]    cadence.
+[00:12:56.840 --> 00:12:59.400]    And then a smaller number that has no preference.
+[00:12:59.400 --> 00:13:04.840]    The four release cadence preference seems to be pretty low amongst the respondents so
+[00:13:04.840 --> 00:13:05.840]    far.
+[00:13:05.840 --> 00:13:06.840]    So again, this is still in progress.
+[00:13:06.840 --> 00:13:09.320]    We're still collecting results.
+[00:13:09.320 --> 00:13:13.520]    Another interesting thing is that there are a ton of people that are still running very
+[00:13:13.520 --> 00:13:16.380]    old versions of Kubernetes.
+[00:13:16.380 --> 00:13:20.580]    Whether that's through choice, they don't want to upgrade, or they just can't because
+[00:13:20.580 --> 00:13:25.880]    of the difficulty that come with doing major upgrades like that.
+[00:13:25.880 --> 00:13:33.080]    If you look at the data in the third chart, we see a lot of people are running 1.21, but
+[00:13:33.080 --> 00:13:37.280]    there's also a lot of people running 1.20, which is now in maintenance mode.
+[00:13:37.280 --> 00:13:43.680]    And there's a surprising number that are still running 1.19, 1.18, or the bucket of 1.17
+[00:13:43.680 --> 00:13:44.680]    or older.
+[00:13:44.680 --> 00:13:46.720]    So we didn't really go into any more granularity there.
+[00:13:46.720 --> 00:13:51.000]    But that's a lot of folks that are running clusters that are no longer getting patches,
+[00:13:51.000 --> 00:13:52.000]    no longer getting updates.
+[00:13:52.000 --> 00:13:57.200]    And again, whether that's because it's difficult to kind of keep up with the upgrade cadence,
+[00:13:57.200 --> 00:14:00.800]    we don't have the direct drill down here for that or not.
+[00:14:00.800 --> 00:14:07.400]    But looking at the data, it's pretty clear so far that the three cadence release thing
+[00:14:07.400 --> 00:14:10.400]    is working okay for folks.
+[00:14:10.400 --> 00:14:15.560]    From the release team's perspective, we think it's been beneficial.
+[00:14:15.560 --> 00:14:17.120]    The change in general has been beneficial.
+[00:14:17.120 --> 00:14:19.640]    It's been a little bit easier to staff the release teams.
+[00:14:19.640 --> 00:14:27.520]    We did have some difficulty coming into the 2021 year after – it's hard to really determine
+[00:14:27.520 --> 00:14:28.880]    what the cause was.
+[00:14:28.880 --> 00:14:33.720]    But we had some difficulty getting role leads for some of those teams.
+[00:14:33.720 --> 00:14:36.760]    It's difficult to make that kind of time commitment.
+[00:14:36.760 --> 00:14:40.200]    The predictability of it makes it a little easier to know, like, I'm going to be able
+[00:14:40.200 --> 00:14:45.740]    to commit to this time because I know that it's going to be pretty much these dates.
+[00:14:45.740 --> 00:14:49.400]    Inside the cap, we have some high-level guidance about what it's going to look like for the
+[00:14:49.400 --> 00:14:50.400]    rest of 2022.
+[00:14:50.400 --> 00:14:56.480]    Those dates are notional, so they may shift a little bit depending on things that happen,
+[00:14:56.480 --> 00:15:00.600]    but you get a little bit better understanding of what things are going to look like.
+[00:15:00.600 --> 00:15:05.320]    Obviously, the downside is that with fewer releases, the cadence or the velocity of getting
+[00:15:05.320 --> 00:15:07.600]    new features out falls a little bit.
+[00:15:07.600 --> 00:15:14.840]    So that's an area where we end up needing to do some balancing between the needs of
+[00:15:14.840 --> 00:15:17.600]    distributors and the needs of users.
+[00:15:17.600 --> 00:15:21.960]    With that, I'll open it up for any questions.
+[00:15:21.960 --> 00:15:26.000]    Again, I think the major takeaway here is if you have not done the survey, please, please
+[00:15:26.000 --> 00:15:27.000]    do so.
+[00:15:27.000 --> 00:15:34.400]    We would very much like to have the feedback, and it'll help us make decisions for the
+[00:15:34.400 --> 00:15:35.400]    community going forward.
+[00:15:35.400 --> 00:15:45.200]    So if you have any comment on release cadence, go ahead and raise your hand.
+[00:15:45.200 --> 00:15:52.320]    There's a question in the chat.
+[00:15:52.320 --> 00:15:54.880]    It's not really related to this, but I'll answer it since we're here and we're kind
+[00:15:54.880 --> 00:15:55.880]    of paused.
+[00:15:55.880 --> 00:15:59.920]    Any idea when Shadows will be hired for upcoming releases?
+[00:15:59.920 --> 00:16:05.280]    Because of the predictable schedule, generally what happens for every release is at the end
+[00:16:05.280 --> 00:16:11.680]    of the cycle, we send out a survey, a Google form, basically to collect applicants.
+[00:16:11.680 --> 00:16:18.680]    That'll generally be in the last two, three, maybe four weeks of the release.
+[00:16:18.680 --> 00:16:20.320]    You can kind of back that up from the release date.
+[00:16:20.320 --> 00:16:27.600]    So if you look at the release date for 1-23, as C.C. mentioned, or sorry, 1-24 as C.C.
+[00:16:27.600 --> 00:16:33.200]    mentioned, that is supposed to be April 19th.
+[00:16:33.200 --> 00:16:39.000]    So probably end of March, which is coming up, beginning of April, you'll start to see
+[00:16:39.000 --> 00:16:40.400]    some of the comms come out from that.
+[00:16:40.400 --> 00:16:44.880]    So definitely stay tuned to Kubernetes dev if you're not there already.
+[00:16:44.880 --> 00:16:56.400]    Thanks, Dems, for dropping the link to the release timeline into the chat as well.
+[00:16:56.400 --> 00:17:02.760]    I think Eddie also asked, with the change in the cadence, have we seen an uptick in
+[00:17:02.760 --> 00:17:04.240]    cherry picks or backports?
+[00:17:04.240 --> 00:17:08.800]    I don't think we've seen a major shift in that pattern.
+[00:17:08.800 --> 00:17:13.760]    I think Adolfo is on as well.
+[00:17:13.760 --> 00:17:19.120]    Do you have any other opinions there?
+[00:17:19.120 --> 00:17:25.960]    I mean, not much, to be honest.
+[00:17:25.960 --> 00:17:39.280]    At least regarding the time spent with approving cherry picks and reviews, it's not much.
+[00:17:39.280 --> 00:17:46.560]    Yeah, and the other thing, someone did a report on 1.23 for the number of exception requests,
+[00:17:46.560 --> 00:17:51.640]    and it did not go up markedly with the change in release cadence.
+[00:17:51.640 --> 00:17:52.640]    It did not?
+[00:17:52.640 --> 00:17:53.640]    Yeah.
+[00:17:53.640 --> 00:18:00.960]    Part of it was we were trying to decide, it was in a thread about deciding how long code
+[00:18:00.960 --> 00:18:01.960]    freeze should be.
+[00:18:01.960 --> 00:18:10.960]    One of the release teams hopefully posted a bunch of stats for the last four months.
+[00:18:10.960 --> 00:18:18.080]    Yeah, I mean, there was a small increase, as you'd expect, but there wasn't a doubling
+[00:18:18.080 --> 00:18:19.080]    or anything like that.
+[00:18:19.080 --> 00:18:27.040]    I think on that kind of line of thinking, the number of enhancements that has landed
+[00:18:27.040 --> 00:18:32.920]    in those places has generally, I think with the smaller cadence, has been a little higher.
+[00:18:32.920 --> 00:18:37.600]    Like this time around, we have 66 things that are being tracked, and that runs the gamut
+[00:18:37.600 --> 00:18:41.480]    of brand new alpha things, things that are graduating beta, things that are graduating
+[00:18:41.480 --> 00:18:44.960]    to stable, things that are duplicating as well.
+[00:18:44.960 --> 00:18:54.240]    That number is higher than I think we saw in the times prior to say like 1.19, but it's
+[00:18:54.240 --> 00:18:58.280]    been fairly consistent across those services.
+[00:18:58.280 --> 00:19:05.480]    Since we, 1.19 was a little different as well because while it was elongated, we didn't
+[00:19:05.480 --> 00:19:08.800]    keep the enhancements collection period open for longer.
+[00:19:08.800 --> 00:19:17.440]    It was kind of coming off of the previous normal cycles before.
+[00:19:17.440 --> 00:19:21.560]    We were wondering whether the 1.20 release coming right after that was going to be like
+[00:19:21.560 --> 00:19:26.560]    a big bang thing where folks had a lot of queued up things that they wanted to ship,
+[00:19:26.560 --> 00:19:28.720]    and whether that would be unusual.
+[00:19:28.720 --> 00:19:35.320]    It turns out it was bigger, but it didn't seem like out of line with the ones that came
+[00:19:35.320 --> 00:19:36.320]    after 1.20.
+[00:19:36.320 --> 00:19:48.840]    Okay, Jordan wants to know whether we track backwards for release branch over time.
+[00:19:48.840 --> 00:19:53.680]    Does anybody know the answer to that?
+[00:19:53.680 --> 00:20:01.240]    I don't think we keep that as a running set of data, but I bet we could build that set
+[00:20:01.240 --> 00:20:05.240]    of data if that's of interest to folks.
+[00:20:05.240 --> 00:20:09.560]    That would be interesting.
+[00:20:09.560 --> 00:20:17.640]    I have a feeling that it's going up, but for reasons unrelated to the release gates and
+[00:20:17.640 --> 00:20:24.680]    for reasons that….

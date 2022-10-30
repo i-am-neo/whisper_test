@@ -1,0 +1,7 @@
+[00:00:00.000 --> 00:00:18.680]    Hello, everyone. Welcome to the March Kubernetes Community Meeting. Thank you all for joining
+[00:00:18.680 --> 00:00:24.400]    or for watching, if you're watching this on recording, which hopefully more of you are.
+[00:00:24.400 --> 00:00:35.880]    I am Josh Berkus. I am hosting today's meeting. And Taliesin is our note taker. Laura is our
+[00:00:35.880 --> 00:00:45.040]    usher here. You too can be a volunteer for the glamorous community meeting that we have
+[00:00:45.040 --> 00:00:49.960]    every month. It's actually kind of fun. Plus, you get to know a lot of people in the community
+[00:00:49.960 --> 00:00:56.960]    who you maybe didn't know before. If you're interested in this, please contact us on ENC
+[00:00:56.960 --> 00:01:20.520]    and we'll have a great experience.

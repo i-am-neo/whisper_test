@@ -1,0 +1,58 @@
+[00:00:00.000 --> 00:00:05.680]    Obviously the downside is that with fewer releases, the cadence or the velocity of getting
+[00:00:05.680 --> 00:00:07.880]    new features out falls a little bit.
+[00:00:07.880 --> 00:00:15.200]    So that's an area where we end up needing to do some balancing between the needs of
+[00:00:15.200 --> 00:00:17.200]    contributors and the needs of users.
+[00:00:17.200 --> 00:00:21.840]    With that, I'll open it up for any questions.
+[00:00:21.840 --> 00:00:26.360]    Again, I think the major takeaway here is if you have not done the survey, please, please
+[00:00:26.360 --> 00:00:27.360]    do so.
+[00:00:27.360 --> 00:00:30.320]    We would very much like to have the feedback.
+[00:00:30.320 --> 00:00:37.280]    And it will help us make decisions for the community going forward.
+[00:00:37.280 --> 00:00:51.480]    So if you have any comment on release cadence, go ahead and raise your hand.
+[00:00:51.480 --> 00:00:52.480]    There's a question in the chat.
+[00:00:52.480 --> 00:00:55.280]    It's not really related to this, but I'll answer it since we're here and we're kind
+[00:00:55.280 --> 00:00:56.280]    of paused.
+[00:00:56.280 --> 00:01:00.320]    I have no idea when Shadows will be hired for upcoming releases.
+[00:01:00.320 --> 00:01:05.680]    Because of the predictable schedule, generally what happens for every release is at the end
+[00:01:05.680 --> 00:01:12.040]    of the cycle, we send out a survey, a Google form, basically to collect applicants.
+[00:01:12.040 --> 00:01:18.280]    So that'll generally be in the last two, three, maybe four weeks of the release.
+[00:01:18.280 --> 00:01:20.680]    And you can kind of back that up from the release date.
+[00:01:20.680 --> 00:01:28.280]    So if you look at the release date for 1-23, as C.C. mentioned, sorry, 1-24 as C.C. mentioned,
+[00:01:28.280 --> 00:01:33.580]    that is supposed to be April 19th.
+[00:01:33.580 --> 00:01:39.480]    So probably end of March, which is coming up, beginning of April, you'll start to see
+[00:01:39.480 --> 00:01:40.760]    some of the comms go out from that.
+[00:01:40.760 --> 00:01:45.040]    So definitely stay tuned to Kubernetes dev if you're not there already.
+[00:01:45.040 --> 00:01:56.760]    Thanks, Dems, for dropping the link to the release timeline in the chat as well.
+[00:01:56.760 --> 00:02:03.120]    I think Eddie also asked, with the change in the cadence, have we seen an uptick in
+[00:02:03.120 --> 00:02:04.920]    cherry picks or backports?
+[00:02:04.920 --> 00:02:09.160]    And I don't think we've seen a major shift in that pattern.
+[00:02:09.160 --> 00:02:14.120]    I think Adolfo is on as well.
+[00:02:14.120 --> 00:02:19.480]    Do you have any other opinions there?
+[00:02:19.480 --> 00:02:26.320]    I mean, not much, to be honest.
+[00:02:26.320 --> 00:02:37.800]    At least regarding the time spent with probing cherry picks and reviews, it's not much.
+[00:02:37.800 --> 00:02:46.920]    Yeah, and the other thing, someone did a report on 1.23 for the number of exception requests,
+[00:02:46.920 --> 00:02:51.640]    and it did not go up markedly with the change in release cadence.
+[00:02:51.640 --> 00:02:52.640]    It did not.
+[00:02:52.640 --> 00:02:53.640]    Yeah.
+[00:02:53.640 --> 00:03:01.360]    Part of it was we were trying to decide, it was in a thread about deciding how long code
+[00:03:01.360 --> 00:03:02.360]    freeze should be.
+[00:03:02.360 --> 00:03:11.640]    And one of the release team helped to post a bunch of stats for the last four months.
+[00:03:11.640 --> 00:03:18.480]    Yeah, I mean, there was a small increase, as you'd expect, but there wasn't a doubling
+[00:03:18.480 --> 00:03:19.480]    or anything like that.
+[00:03:19.480 --> 00:03:27.800]    Yeah, I think on that kind of line of thinking, the number of enhancements that has landed
+[00:03:27.800 --> 00:03:33.240]    on the release is generally, I think with the smaller things, has been a little higher.
+[00:03:33.240 --> 00:03:38.120]    Like this time around, we have 66 things that are being tracked, and that runs the gamut
+[00:03:38.120 --> 00:03:42.880]    of brand new alpha things, things that are graduating beta, things that are graduating
+[00:03:42.880 --> 00:03:44.920]    to stable, things that are deprecating as well.
+[00:03:44.920 --> 00:03:53.960]    And that number is higher than I think we saw in the times prior to say like 1.19.
+[00:03:53.960 --> 00:03:58.760]    But it's been fairly consistent across those releases.
+[00:03:58.760 --> 00:04:05.880]    Since we, 1.19 was a little different as well, because while it was elongated, we didn't
+[00:04:05.880 --> 00:04:09.520]    keep the enhancements collection period open for longer.
+[00:04:09.520 --> 00:04:17.800]    It was kind of coming off of the previous normal cycles before.
+[00:04:17.800 --> 00:04:21.960]    And we were wondering whether the 1.20 release coming right after that was going to be like
+[00:04:21.960 --> 00:04:26.960]    a big bang thing, where folks had a lot of queued up things that they wanted to ship,
+[00:04:26.960 --> 00:04:29.440]    and whether that would be unusual.
+[00:04:29.440 --> 00:04:35.720]    And it turns out it was bigger, but it didn't seem like out of line with the ones that came
+[00:04:35.720 --> 00:04:36.720]    after 1.20.
+[00:04:36.720 --> 00:04:49.240]    Okay, Jordan wants to know whether we track backwards for release branch over time.
+[00:04:49.240 --> 00:04:53.960]    Does anybody know the answer to that?
+[00:04:53.960 --> 00:05:20.120]    I don't think we keep that as a runny set of data, but I bet we could.
